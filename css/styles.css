@@ -129,8 +129,16 @@ color: var(--main-h-color);
 }
 /* ---------HERO-------- */
 .hero {
+  background-color: #2E2F42;
+  background-image:linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(0, 0, 0, 0.25)),
+  url(../img/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
-  background: var(--main-h-color);  
+  padding-top: 188px; 
+  padding-bottom: 188px; 
 }
 .hero-title {
   margin-bottom: 48px;
@@ -163,6 +171,8 @@ color: var(--main-h-color);
 }
 /* ---------PURPOSES-------- */
 .purposes {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .purposes-list{
   display: flex;
@@ -171,6 +181,30 @@ color: var(--main-h-color);
   width: 264px;
   margin-right: 24px;
 }
+.purposes-item::before {
+  display: block;
+  content:"";
+  height: 112px;
+  outline: 1px solid red;
+  background-image: url(../img/icons.svg#icon-antenna-1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--logo-span-footer);
+}
+.purposes-item:nth-child(1)::before{
+  background-image: url(../img/antenna\ 1.svg);
+}
+.purposes-item:nth-child(1)::before{
+  background-image: url(../img/icons.svg#icon-Logo-5);
+}
+.purposes-item:nth-child(1)::before{
+  background-image: url(../img/icons.svg#icon-diagram-1);
+}
+.purposes-item:nth-child(1)::before{
+  background-image: url(../img/icons.svg#icon-astronaut-1);
+}
+
 .purposes-item:nth-child(4n) {
   margin-right: 0px;
 }
@@ -248,13 +282,34 @@ color: var(--main-h-color);
  margin-bottom: 8px;
 }
 .team-list .texte {
-  
+  margin-bottom: 8px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: var(--typical-lh);
   text-align: center; 
   color: var(--main-text-color);
+}
+.team-icon{
+ display: flex;
+ justify-content: center;
+ gap: 24px;
+ margin-bottom: 32px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  
+  
+}
+.icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-color);
+  display: block;
+  border-radius: 50%;
+}
+.link {
 }
 /* ---------FOOTER-------- */
 .footer {
@@ -316,6 +371,7 @@ color: var(--logo-span-footer);
   display: inline-flex;
   border-radius: 4px;
   align-items: center;
+  
 }
 
 .cards-btn .btn {
@@ -331,6 +387,7 @@ letter-spacing: 0.04em;
 background-color: var(--logo-span-footer);
 color: var(--logo-color); 
 cursor: pointer;
+
 }
 .cards-btn .btn:hover,
 .cards-btn .btn:focus{
@@ -341,6 +398,7 @@ cursor: pointer;
   margin-left:24px;
   margin-bottom: 72px;
   padding: 12px 24px;
+  
 }
 .cards-list {
   display: flex;
