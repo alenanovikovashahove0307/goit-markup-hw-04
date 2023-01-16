@@ -181,6 +181,9 @@ color: var(--main-h-color);
   color: var(--first-btn-color);
   background-color: var(--logo-color);
   cursor: pointer;
+  /* transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .hero-btn:hover,
 .hero-btn:focus{
