@@ -401,15 +401,15 @@ color: var(--main-h-color);
   justify-content: center;
   align-items: center; 
 }
-.icon-customers:hover,
-.icon-customers:focus{
+.icon-customers-link:hover,
+.icon-customers-link:focus{
   border: 1px solid var(--present-btn);
 }
 .icon-customers-svg{
   fill: var(--icon-color);
 }
-.icon-customers-svg:hover,
-.icon-customers-svg:focus{
+.icon-customers-link:hover .icon-customers-svg,
+.icon-customers-link:focus .icon-customers-svg{
  fill: var(--present-btn);
 }
 
@@ -544,7 +544,8 @@ cursor: pointer;
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .foto{
   display: block;
@@ -552,7 +553,7 @@ cursor: pointer;
 .cards-foto {
   width: 360px;
   
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
   
 }
 .cards-foto:nth-child(3n) {
